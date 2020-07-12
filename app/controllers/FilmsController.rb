@@ -15,5 +15,5 @@ class FilmsController < ApplicationController
     #update action
 
     #delete action
-    #Test to master branch
+    
 end
