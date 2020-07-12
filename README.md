@@ -1,3 +1,2 @@
 
-# reel-vault
-# Reel-Vault-App-
+# Reel Vault Sinatra Project 
