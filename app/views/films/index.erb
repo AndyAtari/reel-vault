@@ -1,0 +1,10 @@
+<h3>My Awesome Film Prints!</h3>
+<%@films.each do |film|%>
+    <p><ul><li><b><%=film.title%></b></li>
+    <li>Genre: <%=film.genre%></li>
+    <li>Gauge: <%=film.gauge%></li>
+    <li>Condition: <%=film.condition%></li>
+    <li>Reels: <%=film.reels%></li>
+    <li>Length: <%=film.length%>'</li>  
+<%end%>
+</ul></p>
