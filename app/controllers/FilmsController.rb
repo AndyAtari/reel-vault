@@ -29,6 +29,8 @@ class FilmsController < ApplicationController
 
     #delete action
     delete '/films/:id' do
-        
+        film = current_user.films.find_by_id(params[:id])
+        film.destroy
+        redirect '/films'
     end
 end

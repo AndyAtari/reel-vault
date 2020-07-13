@@ -8,7 +8,9 @@
     <li>Length: <%=film.length%>'</li><br>  
     <form action="films/<%=film.id%>" method="post">
     <input type="hidden" name="_method" value="DELETE">
-    <input type="button" value="Delete!" style="color:red">
+    <input type="submit" value="Delete!" style="color:red">
     </form>
 <%end%>
-</ul></p>
+</ul></p><br>
+
+<p><a href="/">Home</a></p>
