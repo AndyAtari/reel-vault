@@ -28,5 +28,7 @@ class FilmsController < ApplicationController
     #update action
 
     #delete action
-    
+    delete '/films/:id' do
+        
+    end
 end

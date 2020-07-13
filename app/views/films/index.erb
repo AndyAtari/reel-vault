@@ -5,6 +5,10 @@
     <li>Gauge: <%=film.gauge%></li>
     <li>Condition: <%=film.condition%></li>
     <li>Reels: <%=film.reels%></li>
-    <li>Length: <%=film.length%>'</li>  
+    <li>Length: <%=film.length%>'</li><br>  
+    <form action="films/<%=film.id%>" method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="button" value="Delete!" style="color:red">
+    </form>
 <%end%>
 </ul></p>
