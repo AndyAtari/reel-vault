@@ -19,18 +19,32 @@ class FilmsController < ApplicationController
 
     #show action
     get '/films/:id' do
-        @film = current_user.films.find_by_id(params[:id])
+        set_film
         erb :'films/show'
     end
 
     #edit action(view for form that will update)
+    get '/films/:id/edit' do
+       set_film
+       erb :'films/edit'
+    end
 
     #update action
+    patch '/films/:id' do 
+        params.delete(:_method)
+        set_film
+        @film.update(params)
+        redirect '/films'
+    end
 
     #delete action
     delete '/films/:id' do
-        film = current_user.films.find_by_id(params[:id])
-        film.destroy
+        set_film
+        @film.destroy
         redirect '/films'
+    end
+
+    def set_film
+        @film = current_user.films.find_by_id(params[:id])
     end
 end

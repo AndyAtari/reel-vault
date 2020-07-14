@@ -1,0 +1,17 @@
+<form action="/films/<%=@film.id%>" method="post">
+<input type="hidden" name="_method" value="patch">
+<h3>Edit Your Film Print Archives!</h3><br>
+<label for="title"> Film Title: </label>
+    <input id="title" type="text" name="title" value="<%=@film.title%>"><br><br>
+    <label for="genre"> Genre: </label>
+    <input id="genre" type="text" name="genre" value="<%=@film.genre%>"><br><br>
+    <label for="gauge"> Gauge: </label>
+    <input id="gauge" type="text" name="gauge" value="<%=@film.gauge%>"><br><br>
+    <label for="condition"> Condition: </label>
+    <input id="condition" type="text" name="condition" value="<%=@film.condition%>"><br><br>
+    <label for="reels"> Reels: </label>
+    <input id="reels" type="text" name="reels" value="<%=@film.reels%>"><br><br>
+    <label for="length"> Length: </label>
+    <input id="length" type="text" name="length" value="<%=@film.length%>"><b>'</b><br><br>
+    <input type="submit" value="Update">
+</form>

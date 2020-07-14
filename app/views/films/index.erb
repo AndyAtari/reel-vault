@@ -9,7 +9,8 @@
     <form action="films/<%=film.id%>" method="post">
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="Delete!" style="color:red">
-    </form>
+    </form><br>
+    <a href="/films/<%=film.id%>/edit">Edit Film!</a>
 <%end%>
 </ul></p><br>
 
