@@ -1,7 +1,13 @@
-<h3><%=@film.title%><h3>
+<h3><%=@film.title%></h3>
 <p>Genre: <%=@film.genre%></p>
 <p>Gauge: <%=@film.gauge%></p>
 <p>Condition: <%=@film.condition%></p>
 <p>Reels: <%=@film.reels%></p>
-<p>Length: <%=@film.length%></p>
-<a href="/films">Return To All Films</a>
+<p>Length: <%=@film.length%></p><br>
+<a href="/films/<%=@film.id%>/edit">Edit Film!</a><br><br>
+<a href="/films">Return To All Films</a><br><br>
+<form action="/films/<%=@film.id%>" method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete!" style="color:red">
+    </form><br>
+
