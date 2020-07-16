@@ -44,10 +44,7 @@ class FilmsController < ApplicationController
         redirect '/films'
     end
 
-    get '/search/new' do
-        erb :'films/search'
-    end
-
+    #search action(show)
     get '/search/results' do
         @films = Film.all 
         if params[:search]
