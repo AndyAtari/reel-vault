@@ -44,6 +44,20 @@ class FilmsController < ApplicationController
         redirect '/films'
     end
 
+    get '/search/new' do
+        erb :'films/search'
+    end
+
+    get '/search/results' do
+        @films = Film.all 
+        if params[:search]
+            @films = Film.search(params[:search])
+        else
+            @films = Film.all 
+        end
+        erb :'films/results'
+    end
+
     def set_film
         @film = current_user.films.find_by_id(params[:id])
     end
