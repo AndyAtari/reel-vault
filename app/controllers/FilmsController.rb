@@ -1,13 +1,17 @@
 class FilmsController < ApplicationController
     #index action
     get '/films' do
-        @films = current_user.films 
-        erb :'films/index'
+        if logged_in?
+            @films = current_user.films.all 
+            erb :'films/index'
+        else
+            redirect "/login"
+        end
     end
 
     #new action(view for form that will create)
     get '/films/new' do 
-        if !session[:email] 
+        if !logged_in?  
             redirect "/login"
         else
         erb :'films/new'
@@ -23,7 +27,7 @@ class FilmsController < ApplicationController
 
     #show action
     get '/films/:id' do
-        set_film
+        @film = Film.find_by_id(params[:id])
         erb :'films/show'
     end
 
