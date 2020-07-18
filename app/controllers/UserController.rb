@@ -6,7 +6,12 @@ class UserController < ApplicationController
     end
 
     post '/login' do
+        session[:email] = params[:email]
         redirect "/films"
+    end
+
+    get '/logout' do 
+        session.clear
     end
     
 end

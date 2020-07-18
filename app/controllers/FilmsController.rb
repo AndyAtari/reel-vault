@@ -7,7 +7,11 @@ class FilmsController < ApplicationController
 
     #new action(view for form that will create)
     get '/films/new' do 
+        if !session[:email] 
+            redirect "/login"
+        else
         erb :'films/new'
+        end
     end
 
     #create action
