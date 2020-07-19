@@ -14,7 +14,8 @@ class UserController < ApplicationController
             session[:user_id] = @user.id
             redirect to "/films"
         else
-            redirect "/signup"
+            @error = "Please fill out all fields correctly!"
+            erb :"/users/new"
         end
     end
 
@@ -32,12 +33,20 @@ class UserController < ApplicationController
             session[:user_id] = @user.id
             redirect "/films"
         else
-            redirect "/login"
+            @error = "Sorry, we can not find a user with that username and password."
+            erb :"users/login"
         end
     end
 
     get '/logout' do 
-        session.clear
+        if logged_in?
+            session.clear
+            @message = "You have logged out successfully!"
+            erb :"users/login"
+        else   
+            redirect "/"    
+        end    
     end
+    
     
 end
