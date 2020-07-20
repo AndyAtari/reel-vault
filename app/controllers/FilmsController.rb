@@ -33,8 +33,15 @@ class FilmsController < ApplicationController
 
     #edit action(view for form that will update)
     get '/films/:id/edit' do
-       set_film
-       erb :'films/edit'
+        if logged_in?
+            if set_film
+            erb :'films/edit'
+        else  
+            redirect '/films'
+        end
+        else
+        redirect '/login'
+        end
     end
 
     #update action
