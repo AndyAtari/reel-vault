@@ -70,7 +70,5 @@ class FilmsController < ApplicationController
         erb :'films/results'
     end
 
-    def set_film
-        @film = current_user.films.find_by_id(params[:id])
-    end
+    
 end

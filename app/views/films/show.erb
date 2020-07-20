@@ -7,7 +7,7 @@
 <a href="/">Return Home</a><br><br>
 
 <%if logged_in?%>
-<%if current_user.id == @film.user_id%>
+<%if set_film%>
 <br><br><a href="/films/<%=@film.id%>/edit">Edit Your Film</a><br><br>
 <form action="/films/<%=@film.id%>" method="post">
     <input type="hidden" name="_method" value="DELETE">
