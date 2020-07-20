@@ -6,3 +6,9 @@
 <p>Length: <%=@film.length%></p><br><br>
 <a href="/">Return Home</a><br><br>
 
+<%if logged_in?%>
+<%if current_user.id == @film.user_id%>
+<br><br><a href="/films/<%=@film.id%>/edit">Edit Your Film</a>
+<%end%>
+<%end%>
+

@@ -42,7 +42,7 @@ class FilmsController < ApplicationController
         params.delete(:_method)
         set_film
         @film.update(params)
-        redirect '/films'
+        redirect '/films' 
     end
 
     #delete action
