@@ -1,9 +1,9 @@
-<h3><%=@film.title%></h3>
+<div class="film-show"><h3><%=@film.title%></h3>
 <p>Genre: <%=@film.genre%></p>
 <p>Gauge: <%=@film.gauge%></p>
 <p>Condition: <%=@film.condition%></p>
 <p>Reels: <%=@film.reels%></p>
-<p>Length: <%=@film.length%></p><br><br>
+<p>Length: <%=@film.length%><b>'</b></p></div><br><br>
 <a href="/">Return Home</a><br><br>
 
 <%if logged_in?%>

@@ -1,6 +1,6 @@
 body {
-    background-color: #557A95;
-    color: rgba(255, 255, 255, 0.801);
+    background-color: #1F2833;
+    color: whitesmoke;
     text-align: center;
     font-family: Arial;
     display: grid;
@@ -8,11 +8,28 @@ body {
     margin: 0;
     place-items: center center;
     font-size: larger;
- 
   }
 
   .film-index {
     text-align: left;
   }
+
+  .film-new {
+   text-align: left;
+   
+  }
+
+  .film-show {
+    line-height: normal;
+  }
+
+  a:hover {
+    color: whitesmoke;
+  }
+
+  a {
+    color: #66FCF1;
+  }
+
 
   

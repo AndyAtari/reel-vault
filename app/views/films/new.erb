@@ -1,18 +1,23 @@
 <h2>Register Your Film Print</h2>
-
+<div class="film-new">
 <b><form action="/films" method="post">
     <label for="title"> Film Title: </label>
     <input id="title" type="text" name="title"><br><br>
     <label for="genre"> Genre: </label>
     <input id="genre" type="text" name="genre"><br><br>
     <label for="gauge"> Gauge: </label>
-    <input id="gauge" type="text" name="gauge"><br><br>
+    <select name="gauge">
+    <option value="8mm">8mm</option>
+    <option value="16mm">16mm</option>
+    <option value="35mm">35mm</option>
+    <option value="70mm">70mm</option>
+    </select><br><br>
     <label for="condition"> Condition: </label>
     <input id="condition" type="text" name="condition"><br><br>
     <label for="reels"> Reels: </label>
     <input id="reels" type="text" name="reels"><br><br>
     <label for="length"> Length: </label>
-    <input id="length" type="text" name="length">'<br><br>
+    <input id="length" type="text" name="length">'<br><br></div>
     <input type="submit" value="Submit">
 </form></b><br>
 
