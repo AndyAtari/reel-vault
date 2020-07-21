@@ -10,7 +10,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+    if logged_in?
+      redirect "/films"
+    else  
     erb :welcome
+    end
   end
   
   helpers do 
