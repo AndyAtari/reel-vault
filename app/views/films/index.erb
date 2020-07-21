@@ -1,16 +1,17 @@
 <h3>My Awesome Film Prints!</h3>
+<div class="film-index">
 <%@films.each do |film|%>
-    <p><ul><li><b><%=film.title%></b></li>
-    <li>Genre: <%=film.genre%></li>
-    <li>Gauge: <%=film.gauge%></li>
-    <li>Condition: <%=film.condition%></li>
-    <li>Reels: <%=film.reels%></li>
-    <li>Length: <%=film.length%>'</li><br>  
+    <p><b><u><%=film.title%></b></u><br><br>
+    <b>Genre:</b> <%=film.genre%><br>
+    <b>Gauge:</b> <%=film.gauge%><br>
+    <b>Condition:</b> <%=film.condition%><br>
+    <b>Reels:</b> <%=film.reels%><br>
+    <b>Length:</b> <%=film.length%><b>'</b><br>  
     <form action="films/<%=film.id%>" method="post">
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="Delete!" style="color:red">
     </form><br>
     <a href="/films/<%=film.id%>/edit">Edit Film!</a>
 <%end%>
-</ul></p><br>
+</p><br></div>
 
