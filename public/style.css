@@ -4,7 +4,7 @@ body {
     text-align: center;
     font-family: Arial;
     display: grid;
-    height: 50vh;
+    height: 60vh;
     margin: 0;
     place-items: center center;
     font-size: larger;
@@ -31,5 +31,11 @@ body {
     color: #66FCF1;
   }
 
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: #66FCF1;
+    color: black;
+    font-size: large;
+  }
 
   
