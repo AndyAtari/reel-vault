@@ -1,10 +1,13 @@
 <div class="film-show"><h3><%=@film.title%></h3>
 <p>Genre: <%=@film.genre%></p>
 <p>Gauge: <%=@film.gauge%></p>
+<p>Aspect Ratio: <%=@film.aspect_ratio%></p>
 <p>Condition: <%=@film.condition%></p>
 <p>Reels: <%=@film.reels%></p>
-<p>Length: <%=@film.length%><b>'</b></p></div><br><br>
-<a href="/">Return Home</a><br><br>
+<p>Length: <%=@film.length%><b>'</b></p>
+<p>Theater: <%=@film.theater%></p>
+</div><br><br>
+<a href="/">Return to your Vault</a><br><br>
 
 <%if logged_in?%>
 <%if set_film%>
