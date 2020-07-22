@@ -27,8 +27,11 @@ class FilmsController < ApplicationController
 
     #show action
     get '/films/:id' do
-        @film = Film.find_by_id(params[:id])
+        if @film = Film.find_by_id(params[:id])
         erb :'films/show'
+        else  
+        redirect '/'
+        end
     end
 
     #edit action(view for form that will update)
