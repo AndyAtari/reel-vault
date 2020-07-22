@@ -4,9 +4,11 @@
     <p><b><u><%=film.title%></b></u><br><br>
     <b>Genre:</b> <%=film.genre%><br>
     <b>Gauge:</b> <%=film.gauge%><br>
+    <b>Aspect Ratio:</b> <%=film.aspect_ratio%><br>
     <b>Condition:</b> <%=film.condition%><br>
     <b>Reels:</b> <%=film.reels%><br>
     <b>Length:</b> <%=film.length%><b>'</b><br>  
+    <b>Theater or Organization:</b> <%=film.theater%><br>
     <form action="films/<%=film.id%>" method="post">
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="Delete!">
