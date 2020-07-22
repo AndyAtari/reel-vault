@@ -23,6 +23,10 @@ body {
     line-height: normal;
   }
 
+  .film-edit {
+    text-align: left;
+  }
+
   a:hover {
     color: whitesmoke;
   }
