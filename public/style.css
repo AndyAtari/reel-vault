@@ -1,5 +1,5 @@
 body {
-    background-color: #1F2833;
+    background-color: #222629;
     color: whitesmoke;
     text-align: center;
     font-family: Arial;
@@ -37,9 +37,17 @@ body {
 
   input[type="submit"] {
     cursor: pointer;
-    background-color: #66FCF1;
-    color: black;
+    background-color: #222629;
+    color: #66FCF1;
     font-size: large;
+    font-family: Arial;
+    border-radius: 5px;
+    border: solid;
+    font-weight: 700;
+  }
+
+  input:hover {
+    color: #7395AE;
   }
 
   
