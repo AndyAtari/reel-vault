@@ -26,10 +26,6 @@ class ApplicationController < Sinatra::Base
     def logged_in?
     !!current_user
     end
-
-    def set_film
-      @film = current_user.films.find_by_id(params[:id])
-    end
     
   end
 
