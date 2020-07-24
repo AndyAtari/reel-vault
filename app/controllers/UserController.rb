@@ -6,7 +6,7 @@ class UserController < ApplicationController
     end
 
     post '/signup' do
-        @user = User.new(user_name: params[:user_name], email: params[:email], password: params[:password])
+        @user = User.new(params)
         if @user.save
             session[:user_id] = @user.id
             redirect to "/films"
