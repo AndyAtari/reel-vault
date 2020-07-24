@@ -11,7 +11,7 @@ class UserController < ApplicationController
             session[:user_id] = @user.id
             redirect to "/films"
         else
-            @error = "Please fill out all fields correctly!"
+            @errors = @user.errors.full_messages 
             erb :"/users/new"
         end
     end
@@ -27,7 +27,7 @@ class UserController < ApplicationController
             session[:user_id] = @user.id
             redirect "/films"
         else
-            @error = "Sorry, we can not find a user with that username and password."
+            @error = "Sorry! We can not find a username or password match."
             erb :"users/login"
         end
     end
