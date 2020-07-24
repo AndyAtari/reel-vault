@@ -26,6 +26,12 @@ class ApplicationController < Sinatra::Base
     def logged_in?
     !!current_user
     end
+
+    def currently_logged_in?
+      if logged_in?
+        redirect "/films"
+      end
+    end
     
   end
 

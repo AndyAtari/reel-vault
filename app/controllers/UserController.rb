@@ -1,11 +1,8 @@
 class UserController < ApplicationController
 
     get '/signup' do
-        if logged_in?
-            redirect "/films"
-        else
-            erb :"/users/new"
-        end
+        currently_logged_in?
+        erb :"/users/new"
     end
 
     post '/signup' do
@@ -20,11 +17,8 @@ class UserController < ApplicationController
     end
 
     get '/login' do
-        if logged_in?
-            redirect to "/films"
-        else
+        currently_logged_in?
         erb :"users/login"
-        end
     end
 
     post '/login' do
