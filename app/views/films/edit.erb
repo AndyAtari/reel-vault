@@ -7,7 +7,8 @@
     <label for="genre"> Genre: </label>
     <input id="genre" type="text" name="genre" value="<%=@film.genre%>"><br><br>
     <label for="gauge"> Gauge: </label>
-    <select name="gauge">
+    <select name="gauge"> 
+    <option value="<%=@film.gauge%>"><%=@film.gauge%></option>
     <option value="8mm">8mm</option>
     <option value="16mm">16mm</option>
     <option value="35mm">35mm</option>
@@ -15,6 +16,7 @@
     </select><br><br>
     <label for="aspect_ratio"> Aspect Ratio: </label>
     <select name="aspect_ratio">
+    <option value="<%=@film.aspect_ratio%>"><%=@film.aspect_ratio%></option>
     <option value="1.33">1.33</option>
     <option value="1.36">1.36</option>
     <option value="1.66:1">1.66:1</option>

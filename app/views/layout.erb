@@ -55,9 +55,10 @@
   <div id="myDropdown" class="dropdown-content">
 <a href="/">Home</a>
 <a href="/films/new">Add A Film To Your Vault!</a>
-<a href="/films">View Some Films!</a>
+<a href="/films">View Your Films!</a>
 <% if !logged_in?%>
 <a href="/login">Log In</a>
+<a href="/signup">Sign Up</a>
 <% end %>
 <% if logged_in?%>
 <a href="/logout">Log Out</a>
