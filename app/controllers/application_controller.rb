@@ -32,6 +32,10 @@ class ApplicationController < Sinatra::Base
         redirect "/films"
       end
     end
+
+    def not_logged_in?
+      redirect "/login" if !logged_in?
+    end
     
   end
 

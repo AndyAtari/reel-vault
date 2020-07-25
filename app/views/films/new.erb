@@ -1,4 +1,10 @@
 <h2>Register Your Film Print</h2>
+
+
+<% if @errors%>
+<p style="color:red">Sorry! <%=@errors.join(", ")%>.</p>
+<%end%><br><br>
+
 <div class="film-new">
 <b><form action="/films" method="post">
     <label for="title"> Film Title: </label>

@@ -16,7 +16,6 @@ body {
 
   .film-new {
    text-align: left;
-   
   }
 
   .film-show {
@@ -49,5 +48,7 @@ body {
   input:hover {
     color: black;
   }
+
+
 
   
