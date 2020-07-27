@@ -3,19 +3,25 @@ body {
     color: whitesmoke;
     text-align: center;
     font-family: Arial;
-    display: grid;
-    height: 60vh;
-    margin: 0;
-    place-items: center center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-size: larger;
   }
 
   .film-index {
     text-align: left;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+ 
   }
 
   .film-new {
    text-align: left;
+   position: absolute;
+    left: 30%;
+    top: 30%;
   }
 
   .film-show {
@@ -24,6 +30,9 @@ body {
 
   .film-edit {
     text-align: left;
+   position: absolute;
+    left: 30%;
+    top: 30%;
   }
 
   a:hover {
@@ -51,6 +60,8 @@ body {
 
   
   .dropbtn {
+    display: flex;
+    justify-content: flex-start;
     background-color: #222629;
     color: #66FCF1;
     padding: 16px;
@@ -91,6 +102,25 @@ body {
   .dropdown a:hover {background-color: #7395AE;}
   
   .show {display: block;}
+
+  .search {
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    border-radius:10px; 
+  }
+
+  h1 {
+    color: #66FCF1;
+  }
+
+  h2 {
+    color: #66FCF1;
+  }
+
+  h3 {
+    color: #66FCF1;
+  }
   
 
   

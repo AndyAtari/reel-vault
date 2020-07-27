@@ -1,11 +1,11 @@
 <h2>Register Your Film Print</h2>
 
-
+<div class="film-new">
 <% if @errors%>
 <p style="color:red">Sorry! <%=@errors.join(", ")%>.</p>
 <%end%><br><br>
 
-<div class="film-new">
+
 <b><form action="/films" method="post">
     <label for="title"> Film Title: </label>
     <input id="title" type="text" name="title"><br><br>
@@ -36,7 +36,6 @@
     <input id="length" type="text" name="length"> '<br><br>
     <label for="theater"> Theater or Organization: </label></b>
     <input id="theater" type="text" name="theater"><i> - Optional </i><br><br>
-    </div>
     <input type="submit" value="Register">
-</form><br>
+</form><br></div>
 
