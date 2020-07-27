@@ -49,6 +49,48 @@ body {
     color: black;
   }
 
-
+  
+  .dropbtn {
+    background-color: #222629;
+    color: #66FCF1;
+    padding: 16px;
+    font-size: larger;
+    font-weight: 900;
+    font-family: Arial;
+    border-radius: 10px;
+    border: solid;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #7395AE;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222629;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #7395AE;}
+  
+  .show {display: block;}
+  
 
   
