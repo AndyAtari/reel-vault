@@ -6,9 +6,9 @@ a film print management app that allows users to keep track of their film collec
 
 A user that signs up or logs in can access their personal collection of films, add new films, edit the details of existing films, or delete prints they no longer own. Whether logged in or not, all users can search for a specific print by movie title or theater/organization. 
 
-This project was created for Flatiron Portfolio Project Assessment and was made with Ruby Sinatra. 
+This project was created for Flatiron Portfolio Project Assessment and was made with Ruby Sinatra. <br><br>
 
-
+<img src="public/images/2020-08-01%20(2).png" width="450">
 
 ## Installation
 
